@@ -1,0 +1,21 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content %}
+<center>
+      <br><br><br><br>
+      <div class="container   ">  <!--jumbotron-->
+        <h1 class="display-4">Welcome</h1>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br><br>
+      <div class="container-sm mx-6">
+         <a href="/stinfo"><button type="button" 
+            class="btn btn-primary btn-lg">Update Station Status</button></a>
+         <a href="/my_data"><button type="button" 
+            class="btn btn-primary btn-lg">Verify Customer Data</button></a>
+         <a href="/qInfo"><button type="button" 
+            class="btn btn-primary btn-lg">Enter Pumped Fuel Amount</button></a>
+      </div><br><br><br><br><br><br><br><br><br><br><br><br>
+      <h6>Note for fuel stations : When enter the pumped amount, deduct pumped
+          amount from user's quota and update the field.</h6>
+      <hr>
+      <a href="/logout"><button type="button" class="btn btn-primary btn-md">Log out</button></a>
+   </center>
+{% endblock %}

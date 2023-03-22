@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content %}
+<center>
+      <br><br><br>
+      <div class="container">  <!--jumbotron-->
+        <h1 class="display-4">Welcome</h1>
+      </div>
+   <br><br><br><br><br><br><br><br>
+      <div class="container-sm mx-6">
+         
+         <a href="/find_fuel"></a><a href="/my_quota"><button type="button" 
+            class="btn btn-primary btn-lg">View Quota List</button></a>
+         <a href="/qUpdate"><button type="button" 
+            class="btn btn-primary btn-lg">Assign Quota for Users</button></a>
+         <a href="/find_fuel"><button type="button" 
+            class="btn btn-primary btn-lg">Station List</button></a>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+      <a href="/logout"><button type="button" class="btn btn-primary btn-md">Log out</button></a>
+</center>
+{% endblock %}

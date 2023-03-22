@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>User Details</title>
+	<!-- CSS FOR STYLING THE PAGE -->
+	<style>
+		table {
+			margin: 0 auto;
+			font-size: large;
+			border: 1px solid black;
+		}
+
+		h1 {
+			text-align: center;
+			color: #006600;
+			font-size: xx-large;
+			font-family: 'Gill Sans', 'Gill Sans MT',
+			' Calibri', 'Trebuchet MS', 'sans-serif';
+		}
+
+		td {
+			background-color: #E4F5D4;
+			border: 1px solid black;
+		}
+
+		th,
+		td {
+			font-weight: bold;
+			border: 1px solid black;
+			padding: 10px;
+			text-align: center;
+		}
+
+		td {
+			font-weight: lighter;
+		}
+
+		body {
+			background-image: url("https://img.freepik.com/free-photo/abstract-smooth-empty-grey-studio-well-use-as-background-business-report-digital-website-template-backdrop_1258-55967.jpg?w=2000");
+			background-color: #cccccc;
+		   }
+	</style>
+</head>
+
+<body>
+	<section>
+		<h1>User Assigned Quota</h1>
+		<!-- TABLE CONSTRUCTION -->
+		<table>
+			<tr>
+				<th>ID</th>
+				<th>User ID</th>
+				<th>Fuel Quota</th>
+			</tr>
+      {% for a in datA %}
+			<tr>
+				<!-- FETCHING DATA FROM EACH
+					ROW OF EVERY COLUMN -->
+				<td>{{a.id}}</td>
+				<td>{{a.user_id}}</td>
+				<td>{{a.quota}}</td>
+			</tr>
+      {% endfor %}
+      
+		</table>
+	</section>
+</body>
+
+</html>

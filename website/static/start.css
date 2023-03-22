@@ -1,0 +1,50 @@
+@media (min-width: 1025px) {
+    body {
+	    background-image: url(petrol.jpg);
+		
+   }
+}
+.btn                                  
+{
+    background-color: #e6e600;
+	border-radius: 12px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.btn1 {
+	position: absolute;
+    left: 250px;
+    top: 860px;
+}
+.btn2 {
+	position: absolute;
+    left: 500px;
+    top: 860px;
+}
+.btn3 {
+	position: absolute;
+    left: 1600px;
+    top: 860px;
+}
+.btn4 {
+	position: absolute;
+    left: 1350px;
+    top: 860px;
+}
+.btn5 {
+	position: absolute;
+    left: 1150px;
+    top: 860px;
+}
+
+h1 {
+    text-align: center;
+	font-size: 80px;
+	font-family: sans-serif;
+	color: #e6e600;
+}
+
+  

@@ -1,0 +1,33 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %} {% block content %}
+<br><br>
+<div class="container">
+    <center><h1>Add a New Entry Here</h1><br><br></center>
+<form action='' method = "POST">
+<table class="table">
+    <tr>
+        <td>User ID</td>
+        <td><input type = "text" name = "user_id" class="form-control" /></td>
+    </tr>
+
+    <tr>
+        <td>Fuel Quota</td>
+        <td><input type = "text" name = "quota" class="form-control" /></td>
+    </tr>
+    
+    <tr>
+        <td colspan="2">
+            <input type="submit" name="submit" value="submit" class="btn btn-warning">
+        </td>
+       
+    </tr>
+</table>
+  
+  </form>
+
+</div>
+<br>
+<center><a href="/qInfo"><button type="button" class="btn btn-primary btn-md">Delete or Edit</button></a></center>
+
+{% endblock %}
+
+

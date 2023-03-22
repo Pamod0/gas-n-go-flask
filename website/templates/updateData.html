@@ -1,0 +1,80 @@
+{% extends 'base2.html' %}
+{% include 'header.html' %}
+ 
+ 
+ 
+{% block title %} Home {% endblock %}
+ 
+ 
+ 
+{% block body %}
+<div class="container">
+<form action='' method = "POST">
+<table class="table">
+    <tr>
+        <td>Station Name</td>
+        <td><input type = "text" name = "station_name" value="{{fuEl.station_name}}" class="form-control" /></td>
+    </tr>
+    <tr>
+        <td>Phone Number</td>
+        <td><input type = "text" name = "phone" class="form-control" value="{{fuEl.phone}}" /></td>
+    </tr>
+
+    <tr>
+        <td>Fuel Availability</td>
+        <td>
+          Available: <input type = "radio" name = "fuel_availability"  value="available"
+          {% if  fuEl.fuel_availability=='available'  %}
+             checked
+          {% endif  %}
+          />
+         Not Available: <input type = "radio" name = "fuel_availability"  value="not_available"
+         {% if  fuEl.fuel_availability=='not_available'  %}
+         checked
+      {% endif  %}
+         />
+        </td>
+    </tr>
+
+    <tr>
+        <td>Fuel Status</td>
+        <td>
+
+            Full Stock : <input type="checkbox" name="status"  value="full_stock" 
+            {% if 'full_stock' in fuEl.status %}
+               checked
+            {% endif %}
+            >
+            Plenty : <input type="checkbox"  name="status"  value="plenty"
+            {% if 'plenty' in fuEl.status %}
+                checked
+            {% endif %}
+            
+            >
+            Running Low : <input type="checkbox"  name="status"  value="running_low"
+            {% if 'running_low' in fuEl.status %}
+               checked
+            {% endif %}
+            >
+           
+        </td>
+    </tr> 
+
+    <tr>
+        <td colspan="2">
+            <input type="submit" name="submit" value="submit" class="btn btn-warning">
+        </td>
+       
+    </tr>
+</table>
+  
+  </form>
+
+</div>
+<center>
+    <a href="/stinfo"><button type="button" 
+     class="btn btn-primary btn-md">Back</button></a>
+</center>
+{% endblock %}
+
+

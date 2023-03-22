@@ -1,0 +1,51 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %} {% block content %}
+<br><br>
+<div class="container">
+    <center><h1>Add a New Entry Here</h1><br><br></center>
+<form action='' method = "POST">
+<table class="table">
+    <tr>
+        <td>Station Name</td>
+        <td><input type = "text" name = "station_name" class="form-control" /></td>
+    </tr>
+
+    <tr>
+        <td>Phone Number</td>
+        <td><input type = "text" name = "phone" class="form-control" /></td>
+    </tr>
+
+    <tr>
+        <td>Fuel Availability</td>
+        <td>
+        Available: <input type = "radio" name = "fuel_availability"  value="available"/>
+        Not Available: <input type = "radio" name = "fuel_availability"  value="not available"/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Fuel Status</td>
+        <td>
+            Full Stock : <input type="checkbox" name="status"  value="full stock">
+            Plenty : <input type="checkbox"  name="status"  value="plenty">
+            Running Low : <input type="checkbox"  name="status"  value="running low">
+
+        </td>
+    </tr>
+    
+    <tr>
+        <td colspan="2">
+            <input type="submit" name="submit" value="submit" class="btn btn-warning">
+        </td>
+       
+    </tr>
+</table>
+  
+  </form>
+
+</div>
+<br>
+<center><a href="/stinfo"><button type="button" class="btn btn-primary btn-md">Back</button></a></center>
+
+{% endblock %}
+
+
