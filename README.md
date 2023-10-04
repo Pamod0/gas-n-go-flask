@@ -2,10 +2,11 @@
 
 Sample software solution to manage the fuel distribution in order to minimize fuel queues.
 
-•	HTML and CSS used for front-end development.  
+•	HTML and CSS for front-end.  
 •	Bootstrap for fast responsive front-end development.  
 •	Flask (Pyhton) for back-end.   
 •	SQLAlchemy and SQLite for database interactions.
+
 ![Use Case Diagram](https://user-images.githubusercontent.com/114252757/228506679-ccc6d472-c65d-47df-a4da-a2ede3d49365.png)  
 ![Activity Diagram](https://user-images.githubusercontent.com/114252757/228506437-9b406345-e2e8-4d3b-a63e-7a3750263045.png)
 ![Picture6](https://user-images.githubusercontent.com/114252757/228509161-0ef3b772-8194-402c-9aee-a8b9f441c0f3.png)
