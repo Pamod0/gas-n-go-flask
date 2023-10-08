@@ -1,17 +1,15 @@
-# fuel_app
+# Gad-N-Go
 
 Sample software solution to manage the fuel distribution in order to minimize fuel queues.
 
-•	Html and CSS used for front-end development.  
-•	Bootstrap is used for fast responsive front-end development.  
-•	For back-end Python programing language is used.  
-•	We need a good framework for python web development. I choose Flask web framework for this project.  
-•	I also used Jinja templating language for write python codes in html files. Jinja is a web template engine for the Python programming language.  
-•	For databases, I used SQLAlchemy. SQLAlchemy is an open-source SQL toolkit and object-relational mapper for the Python programming language.  
-•	I also used SQLite for easy database interrogation. SQLite is a database engine that we can use for our project.  
+• HTML and CSS for front-end.
+• Bootstrap for fast responsive front-end development.
+• Flask (Pyhton) for back-end.
+• SQLAlchemy and SQLite for database interactions.
+
+![Picture6](https://user-images.githubusercontent.com/114252757/228509161-0ef3b772-8194-402c-9aee-a8b9f441c0f3.png)
 ![Use Case Diagram](https://user-images.githubusercontent.com/114252757/228506679-ccc6d472-c65d-47df-a4da-a2ede3d49365.png)  
 ![Activity Diagram](https://user-images.githubusercontent.com/114252757/228506437-9b406345-e2e8-4d3b-a63e-7a3750263045.png)
-![Picture6](https://user-images.githubusercontent.com/114252757/228509161-0ef3b772-8194-402c-9aee-a8b9f441c0f3.png)
 ![Picture7](https://user-images.githubusercontent.com/114252757/228509205-c97e948f-4f47-4183-9aec-0eefcb51bb9c.png)
 ![Picture8](https://user-images.githubusercontent.com/114252757/228509223-854789d1-1af4-4aee-b6a9-6e80c4a97a94.png)
 ![Picture9](https://user-images.githubusercontent.com/114252757/228509239-a276ac0f-15b4-427e-9980-d1b014852b48.png)
